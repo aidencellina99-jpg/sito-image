@@ -3,25 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Il mio primo sito su GitHub Pages</title>
+  <title>Immagine</title>
   <style>
+    /* Imposta sfondo nero pieno */
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f8f8f8;
-      text-align: center;
-      padding-top: 50px;
+      margin: 0;
+      background-color: #000;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
+
+    /* L'immagine si adatta allo schermo mantenendo le proporzioni */
     img {
-      max-width: 80%;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      max-width: 95vw;
+      max-height: 95vh;
+      object-fit: contain;
+      border-radius: 12px;
+      box-shadow: 0 0 30px rgba(255,255,255,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* Effetto al passaggio del mouse */
+    img:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 40px rgba(255,255,255,0.25);
     }
   </style>
 </head>
 <body>
-  <h1>Ciao 👋 Benvenuti nel mio sito!</h1>
-  <p>Questa è una pagina creata direttamente su GitHub.</p>
-  <img src="foto.png" alt="La mia immagine">
+  <!-- Sostituisci 'foto.png' con il nome esatto della tua immagine -->
+  <img src="foto.png" alt="">
 </body>
 </html>
+
